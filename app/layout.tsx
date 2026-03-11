@@ -1,3 +1,4 @@
+import { StrictMode } from "react";
 import type { Metadata } from "next";
 import "../styles/globals.css";
 
@@ -16,7 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        {children}
+        <StrictMode>{children}</StrictMode>
       </body>
     </html>
   );
